@@ -24,8 +24,6 @@ module Mongoid
 			end
 			names.push 'id'
 
-
-
 			method_names = Array.wrap(options[:methods]).map do |name|
 				name.to_s if respond_to?(name)
 			end.compact

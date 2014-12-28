@@ -1,0 +1,14 @@
+%h1
+	Category Listing
+
+%ul#categories
+	= @categories.each do |cat|
+		%li 
+			%h3
+				cat["name"]
+			%p
+				cat["desc"]
+			-# .tags
+			-# 	cat.tags.each do |tag|
+			-# 		%li
+			-# 			tag
